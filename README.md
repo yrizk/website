@@ -26,5 +26,8 @@ Files of importance:
 all db migrations are available.
 
 Does it play well with React? 
+yes, you can remove the templating library of django and replace that part with react. webpack to bundle react and then it just talks to django via http (duh)
+
 Have you used it with postgresql? 
+
 Tutorial: django girls tutorial
