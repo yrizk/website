@@ -11,9 +11,20 @@ python manage.py
 
 There is an admin portal to manage authentication, ui for manipulating entries.
 
-Creating a django project needs django
+Django philosophy:
+Multiple apps installed within a django project. running manage.py will give you a clearer idea 
+of this. 
+See settings.py for managing the applications for the django project. Many of these apps are 
+provided by django, such as auth, admin, sessions, messages, etc. 
 
+Files of importance:
+		settings.py : manages timezone, db engine of choice, other base directory stuff.
+		urls.py: matching string patterns to endpoints in views.py
+		models.py: oo representation of stuff.
+		views.py: can be considered as "adapters", interfacing between the data and the actual views (html)
+			- Large collection of available templates for common use cases. 
+all db migrations are available.
 
+Does it play well with React? 
+Have you used it with postgresql? 
 Tutorial: django girls tutorial
-
-
